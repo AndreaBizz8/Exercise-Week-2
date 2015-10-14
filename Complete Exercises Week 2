@@ -30,9 +30,9 @@ print(2//3)
 print(2/3)
 print(2//3)
 print('''
-The result first line is 0.6666666 because the symbol used is â€œ/â€ and means a normal division.
+The result first line is 0.6666666 because the symbol used is “/” and means a normal division.
 Python running that calculation will keep the decimal numbers.
-The result of the second line is 0 because the symbol used is â€œ//â€.
+The result of the second line is 0 because the symbol used is “//”.
 Using that symboll you will always do a division but it will give back a result without decimal.
 It will also always keep the same natural number even id the decimal is really near the sequent number.
 
@@ -48,7 +48,7 @@ A       a       Area      AREA        area      areaOfRectangle       AreaOfRect
 ''')
 print('''
 There are no better variable as far as you are confident on remember how you wrote the variable itself,
-of course using just the latter â€œaâ€ like variable is not a good idea as you use the letter in more situation.
+of course using just the latter “a” like variable is not a good idea as you use the letter in more situation.
 So if I have to choose I will choose AreaOfRectangle as it will be the most difficult to accidently repeat.
 
 ''')
@@ -137,7 +137,7 @@ print((3+4+5)/3)
 print('''Consider the following code:
 x = 19.93
 y = 20.00
-z = y â€“ x
+z = y – x
 print(z)
 The output is 0.0700000000028
 Why?   
@@ -181,10 +181,10 @@ print('''11.Find two run-time errors:
 from math import sqrt
 X = 2
 Y = 4
-print(â€œThe product of â€œ, x, â€œandâ€, y, â€œisâ€, x + y)
-print(â€œThe root of their difference is â€œ, sqrt(x â€“ y))
+print(“The product of “, x, “and”, y, “is”, x + y)
+print(“The root of their difference is “, sqrt(x – y))
 
-1. Using the symbol " instead of â€œ
+1. Using the symbol " instead of “
 2. On the string print we have to put capital letter for X and Y as we have given them capital letter before.
 3. The product of X and Y is"X*Y" and not "X+Y"
 
@@ -214,7 +214,7 @@ print("Hello",name, "next year you will be", age+1)
 #use string format operators to print the values of the variables radius and
 #area so that the output looks like this:
 print('''
-13.	Given that radius is 2 and area is calculated as 12.5678,
+13. Given that radius is 2 and area is calculated as 12.5678,
 use string format operators to print the values of the variables radius and
 area so that the output looks like this:
 Radius is: 	          2
@@ -225,23 +225,41 @@ Area=12.5678
 print("Radius is:", Radius)
 print("Area is:", %.2 f Area)
 
-
-14.	What are the values of the following expressions, assuming that p is 17 and q is 18?
+To make it happen I have to change the strings in this way:
+Radius=2
+Area=12.5678
+print("Radius is:\t \t", Radius)
+print("Area is: \t \t %.2f" %Area)
+Like you have noticed I have added the code "\t" to the strings that move the cursor one tab forward.
+Doing this the result will be like follow:
+''')
+Radius=2
+Area=12.5678
+print("Radius is:\t \t", Radius)
+print("Area is: \t \t %.2f" %Area)
+('''
+''')
+#Exercise 14
+#What are the values of the following expressions, assuming that
+#p is 17 and q is 18?
+('''14.vWhat are the values of the following expressions, assuming that
+p is 17 and q is 18?
 i.	p // 10 + p % 10
 ii.	p % 2  + q % 2
 iii.	(p + q) // 2
 iv.	(p + q) / 2.0
 
-
-
-x=19.93
-y=20.00
-z=y-x
-print("%.2f" % z)
-
-
-x=2
-print("x**2=" (int(x**2)))
-print ("x**3=" (int(x**3)))
-
-''')
+To find the solution on this I will have to write the following code:
+p=17
+q=18
+print((p // 10) + (p % 10))
+print((p % 2) + (q % 2))
+print((p + q) // 2)
+print ((p + q) / 2.0)
+And the results will be like follows:''')
+p=17
+q=18
+print((p // 10) + (p % 10))
+print((p % 2) + (q % 2))
+print((p + q) // 2)
+print ((p + q) / 2.0)
